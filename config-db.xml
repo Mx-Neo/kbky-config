@@ -1,0 +1,21 @@
+spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+spring.datasource.url=jdbc:oracle:thin:@121.43.74.36:7521:orcl
+spring.datasource.username=mbp
+spring.datasource.password=mbp
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+
+# see https://github.com/alibaba/druid
+spring.datasource.initialSize=5
+spring.datasource.minIdle=5
+spring.datasource.maxActive=20
+spring.datasource.maxWait=60000
+spring.datasource.timeBetweenEvictionRunsMillis=60000
+spring.datasource.validationQuery=SELECT 1 from dual
+spring.datasource.testWhileIdle=true
+spring.datasource.testOnBorrow=false
+spring.datasource.testOnReturn=false
+spring.datasource.poolPreparedStatements=true
+spring.datasource.maxPoolPreparedStatementPerConnectionSize=20
+spring.datasource.filters=stat,wall
+spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+spring.aop.proxy-target-class=true
